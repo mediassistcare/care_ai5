@@ -1,0 +1,263 @@
+{
+  "session_info": {
+    "session_id": "2a0b6d5b-be92-452b-b944-9d02c863038d",
+    "username": "FF",
+    "created_at": "2025-08-27T22:51:03.290093",
+    "last_updated": "2025-08-27T22:53:44.206412",
+    "highest_step_completed": 7
+  },
+  "step1": {
+    "step_name": "Case Category Selection",
+    "form_data": {
+      "case_category": "illness"
+    },
+    "ai_generated_data": {},
+    "files_uploaded": {},
+    "timestamp": "2025-08-27T22:51:03.290093",
+    "data_source": "user_input",
+    "step_completed": true
+  },
+  "step2": {
+    "step_name": "Patient Registration",
+    "form_data": {
+      "full_name": "Savani Monika Dignesbhai",
+      "date_of_birth": "1995-04-04",
+      "gender": "female",
+      "address": "227/228, KRUSHNA NAGAR, COUSWAY ROAD,, NEAR MULTI-PURPAJ HALL,, KATARGAM, Surat City, Suraj Gujarat - 395004",
+      "calculated_age": "30",
+      "lab_reports": "yes",
+      "medical_images": "yes",
+      "signaling_reports": "yes",
+      "emr_existing": "yes",
+      "emr_register": "no",
+      "currently_pregnant": "no",
+      "recent_childbirth": "no"
+    },
+    "ai_generated_data": {
+      "aadhaar_extraction": {
+        "aadhaar_number": "2888 6761 6316",
+        "address": "227/228, KRUSHNA NAGAR, COUSWAY ROAD,, NEAR MULTI-PURPAJ HALL,, KATARGAM, Surat City, Suraj Gujarat - 395004",
+        "date_of_birth": "04/04/1995",
+        "extracted_from": "both sides",
+        "extraction_confidence": "high",
+        "full_name": "Savani Monika Dignesbhai",
+        "gender": "FEMALE"
+      }
+    },
+    "files_uploaded": {
+      "aadhar_combined": {
+        "filename": "aadhaar.jpg",
+        "upload_timestamp": "2025-08-27T22:51:34.219362",
+        "field_name": "aadhar_combined",
+        "content_type": "image/jpeg"
+      }
+    },
+    "timestamp": "2025-08-27T22:51:34.234400",
+    "data_source": "user_input_and_extraction",
+    "step_completed": true
+  },
+  "step3": {
+    "step_name": "Vital Signs & Medical Photos",
+    "form_data": {
+      "temperature": "102",
+      "temperature_unit": "fahrenheit",
+      "oxygen_saturation": "50",
+      "blood_glucose": "98",
+      "glucose_timing": "random",
+      "lung_congestion": "none",
+      "water_in_lungs": "none",
+      "ecg_available": "no"
+    },
+    "ai_generated_data": {},
+    "files_uploaded": {},
+    "timestamp": "2025-08-27T22:51:40.684641",
+    "data_source": "user_input_and_analysis",
+    "step_completed": true
+  },
+  "step4": {
+    "step_name": "Medical Records & Contact Information",
+    "form_data": {},
+    "ai_generated_data": {
+      "generated_questions": "[{\"abnormal_finding\":\"Oxygen Saturation: 50.0 %\",\"medical_concern\":\"hypoxemia\",\"priority\":\"critical\",\"question\":\"Your oxygen saturation is 50.0%, which is critically low compared to the normal range of 95-100%. Are you experiencing symptoms such as severe shortness of breath, chest pain, or confusion?\"},{\"abnormal_finding\":\"Body Temperature: 102.0 \u00b0F\",\"medical_concern\":\"febrile response or infection\",\"priority\":\"abnormal\",\"question\":\"Your body temperature is 102.0 \u00b0F, which indicates a fever. Are you experiencing symptoms like chills, sweating, or muscle aches along with this elevated temperature?\"}]"
+    },
+    "files_uploaded": {},
+    "timestamp": "2025-08-27T22:51:53.080877",
+    "data_source": "user_input_and_analysis",
+    "step_completed": true
+  },
+  "step5": {
+    "step_name": "Complaints & Symptoms",
+    "form_data": {
+      "complaint_text": "fever, chills"
+    },
+    "ai_generated_data": {
+      "symptom_insights": {
+        "key_insights": [
+          "The combination of high fever and chills suggests an infectious process, possibly systemic.",
+          "The oxygen saturation of 50% is critically low, indicating severe hypoxia that needs urgent assessment and intervention.",
+          "Vital signs indicate possible respiratory or systemic instability requiring immediate medical attention."
+        ],
+        "medical_labels": [
+          {
+            "category": "symptom",
+            "confidence": 95,
+            "description": "Elevated body temperature indicating a possible infection or inflammatory process.",
+            "label": "Fever",
+            "severity": "severe"
+          },
+          {
+            "category": "symptom",
+            "confidence": 90,
+            "description": "Shivering or feeling cold associated with fever, often indicating systemic response to infection.",
+            "label": "Chills",
+            "severity": "moderate"
+          }
+        ],
+        "symptom_summary": {
+          "affected_systems": [
+            "immune system",
+            "respiratory system",
+            "circulatory system"
+          ],
+          "duration_significance": "The duration is not specified; however, high fever and hypoxia suggest an acute and potentially severe condition.",
+          "next_steps": "Immediate medical evaluation is necessary, including oxygen therapy, further assessment of respiratory function, and investigation of underlying causes.",
+          "primary_concern": "Fever with chills"
+        },
+        "urgency_assessment": {
+          "immediate_concerns": [
+            "Hypoxia (low oxygen saturation)",
+            "Potential sepsis or severe infection"
+          ],
+          "level": "high",
+          "reasoning": "The patient has a high fever (102\u00b0F) and critically low oxygen saturation (50%), which are signs of potential severe infection or respiratory compromise requiring urgent evaluation."
+        }
+      },
+      "insights_generated_at": "2025-08-27T22:52:21.793594"
+    },
+    "files_uploaded": {},
+    "timestamp": "2025-08-27T22:52:21.793594",
+    "data_source": "user_input_and_ai_analysis",
+    "step_completed": true
+  },
+  "step6": {
+    "step_name": "Analysis & Diagnosis",
+    "form_data": {
+      "assessment_completed": true,
+      "clinical_summary_saved": true,
+      "final_completion_timestamp": "2025-08-27T22:53:31.699813"
+    },
+    "ai_generated_data": {
+      "clinical_summary": "\n                    Clinical SummaryPatient Information:- Name: Savani Monika Dignesbhai- Age: 30 years- Gender: FemaleVital Signs:- Temperature: 102\u00b0F (febrile; indicates significant fever)- Oxygen Saturation: 50% (hypoxemia; critically low)- Blood Glucose (random): 98 mg/dL (within normal range)- Lung Congestion: None documentedPresenting Complaints:- Chief Complaint: Fever and chills- Symptom Analysis:  - Fever: Severe elevation in body temperature, suggestive of an infectious or inflammatory process  - Chills: Moderate intensity, associated with systemic response to feverClinical Findings:- Elevated body temperature consistent with febrile state- Markedly reduced oxygen saturation indicating hypoxemia- No evidence of lung congestion noted upon clinical assessmentAssessment Summary:- The patient exhibits a severe febrile response accompanied by systemic chills- Critical hypoxemia is present, with oxygen saturation at 50%- No lung congestion detected at the time of assessment- Blood glucose level within normal limits- No additional clinical findings documented\n                ",
+      "summary_accepted_at": "2025-08-27T22:53:31.699813",
+      "assessment_completed": true,
+      "final_review_status": "completed",
+      "user_action": "clicked_complete_assessment"
+    },
+    "files_uploaded": {},
+    "timestamp": "2025-08-27T22:53:31.704563",
+    "data_source": "ai_analysis",
+    "step_completed": true
+  },
+  "step7": {
+    "step_name": "ICD11 Code Generation & Analysis",
+    "form_data": {
+      "icd_generation_completed": true,
+      "codes_generated": 5
+    },
+    "ai_generated_data": {
+      "icd_codes_generated": true,
+      "icd_codes": [
+        {
+          "code": "RA01.0",
+          "title": "Severe bacterial infection, unspecified",
+          "description": "A severe systemic infection likely bacterial in origin, presenting with high fever and systemic symptoms, consistent with the febrile state and systemic response.",
+          "confidence": 90
+        },
+        {
+          "code": "XA0ZB",
+          "title": "Hypoxemia",
+          "description": "Critical low oxygen saturation (50%), indicating severe hypoxemia, which is a life-threatening manifestation often associated with respiratory infections or failure.",
+          "confidence": 95
+        },
+        {
+          "code": "R50.0",
+          "title": "Fever",
+          "description": "Severe febrile state with body temperature of 102\u00b0F, indicating significant systemic response to infection or inflammation.",
+          "confidence": 98
+        },
+        {
+          "code": "R68.83",
+          "title": "Chills (symptom)",
+          "description": "Moderate chills accompanying fever, reflecting systemic response to infection or inflammatory process.",
+          "confidence": 85
+        },
+        {
+          "code": "MG30.0Y",
+          "title": "Other specified symptoms involving respiratory system",
+          "description": "Symptoms related to respiratory compromise such as hypoxemia without specified lung congestion, possibly secondary to infection or other causes.",
+          "confidence": 80
+        }
+      ],
+      "clinical_summary_used": "Patient Clinical Summary\nPatient Information:\n- Name: Savani Monika Dignesbhai\n- Age: 30 years\n- Gender: Female\nVital Signs:\n- Temperature: 102\u00b0F (febrile; indicates significant fever)\n- Oxygen Saturation: 50% (hypoxemia; critically low)\n- Blood Glucose: 98 mg/dL (within normal range)\n- Other vitals: Not documented\nPresenting Complaints:\n- Chief Complaint: Fever and chills\n- Symptom Analysis:\n- Fever: Severe elevation in body temperature, suggestive of an infectious or inflammatory process\n- Chills: Moderate intensity, associated with systemic response to fever\n- Additional Symptoms:\n- Lung congestion: None documented\n- Impact on daily activities: Not documented\nClinical Findings:\n- Elevated body temperature consistent with febrile state\n- Markedly reduced oxygen saturation indicating hypoxemia\n- No evidence of lung congestion noted upon clinical assessment\nDetailed Symptom Assessment:\n- Onset:\n- Fever: Not documented\n- Chills: Not documented\n- Characteristics:\n- Fever: Severe elevation in body temperature\n- Chills: Moderate intensity, systemic response\n- Severity:\n- Fever: Severe\n- Chills: Moderate\n- Relieving Factors:\n- Not documented\n- Aggravating Factors:\n- Not documented\n- Temporal Pattern:\n- Not documented\n- Associated Symptoms:\n- Not documented\n- Functional Impact:\n- Not documented\nAssessment Summary:\n- The patient exhibits a severe febrile response accompanied by systemic chills. Critical hypoxemia is present, with oxygen saturation at 50%. No lung congestion was detected at the time of assessment. Blood glucose level remains within normal limits. No additional clinical findings are documented.",
+      "generation_timestamp": "2025-08-27T22:53:44.184262",
+      "total_codes_generated": 5,
+      "llm_analysis": "The clinical presentation of high fever, chills, and critically low oxygen saturation suggests a severe infectious process with respiratory compromise, such as sepsis or severe pneumonia. The hypoxemia is a critical manifestation requiring immediate attention. The codes selected reflect the febrile state, systemic symptoms, and hypoxemia, with an emphasis on the severity and potential infectious etiology."
+    },
+    "files_uploaded": {},
+    "timestamp": "2025-08-27T22:53:44.206412",
+    "data_source": "icd_generation",
+    "step_completed": true
+  },
+  "step_completion_status": {
+    "step1": {
+      "completed": true,
+      "timestamp": "2025-08-27T22:51:03.290093",
+      "form_fields_count": 1,
+      "ai_fields_count": 0,
+      "files_count": 0
+    },
+    "step2": {
+      "completed": true,
+      "timestamp": "2025-08-27T22:51:34.234400",
+      "form_fields_count": 12,
+      "ai_fields_count": 1,
+      "files_count": 1
+    },
+    "step3": {
+      "completed": true,
+      "timestamp": "2025-08-27T22:51:40.684641",
+      "form_fields_count": 8,
+      "ai_fields_count": 0,
+      "files_count": 0
+    },
+    "step4": {
+      "completed": true,
+      "timestamp": "2025-08-27T22:51:53.080877",
+      "form_fields_count": 0,
+      "ai_fields_count": 1,
+      "files_count": 0
+    },
+    "step5": {
+      "completed": true,
+      "timestamp": "2025-08-27T22:52:21.793594",
+      "form_fields_count": 1,
+      "ai_fields_count": 2,
+      "files_count": 0
+    },
+    "step6": {
+      "completed": true,
+      "timestamp": "2025-08-27T22:53:31.704563",
+      "form_fields_count": 3,
+      "ai_fields_count": 5,
+      "files_count": 0
+    },
+    "step7": {
+      "completed": true,
+      "timestamp": "2025-08-27T22:53:44.206412",
+      "form_fields_count": 2,
+      "ai_fields_count": 6,
+      "files_count": 0
+    }
+  },
+  "step_completed": 7
+}

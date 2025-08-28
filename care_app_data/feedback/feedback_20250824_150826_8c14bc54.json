@@ -1,0 +1,25 @@
+{
+  "feedback": "ok",
+  "timestamp": "2025-08-24T09:38:26.720Z",
+  "session_id": "unknown",
+  "username": "ROHIT1",
+  "submitted_at": "2025-08-24T15:08:26.733038",
+  "feedback_id": "8c14bc54",
+  "images": [
+    {
+      "filename": "feedback_20250824_150826_8c14bc54_img_1.jpg",
+      "original_name": "tongue.jpg",
+      "path": "C:\\Users\\flyhi\\Desktop\\VENUGOPAL AIML\\CARE\\care_ai_rohit13\\care_ai_rohit13\\care_app_data\\feedback\\feedback_20250824_150826_8c14bc54_img_1.jpg",
+      "size": 145585,
+      "uploaded_at": "2025-08-24T15:08:26.736266"
+    },
+    {
+      "filename": "feedback_20250824_150826_8c14bc54_img_2.jpeg",
+      "original_name": "skin.jpeg",
+      "path": "C:\\Users\\flyhi\\Desktop\\VENUGOPAL AIML\\CARE\\care_ai_rohit13\\care_ai_rohit13\\care_app_data\\feedback\\feedback_20250824_150826_8c14bc54_img_2.jpeg",
+      "size": 3608,
+      "uploaded_at": "2025-08-24T15:08:26.738280"
+    }
+  ],
+  "image_count": 2
+}

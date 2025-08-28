@@ -1,0 +1,101 @@
+{
+  "session_info": {
+    "session_id": "b8b08576-2f4d-416a-9f8b-9a11529dc229",
+    "username": "SS",
+    "created_at": "2025-08-27T22:26:23.248303",
+    "last_updated": "2025-08-27T22:26:48.840336",
+    "highest_step_completed": 3
+  },
+  "step1": {
+    "step_name": "Case Category Selection",
+    "form_data": {
+      "case_category": "illness"
+    },
+    "ai_generated_data": {},
+    "files_uploaded": {},
+    "timestamp": "2025-08-27T22:26:23.248303",
+    "data_source": "user_input",
+    "step_completed": true
+  },
+  "step2": {
+    "step_name": "Patient Registration",
+    "form_data": {
+      "full_name": "Savani Monika Dignesbhai",
+      "date_of_birth": "1995-04-04",
+      "gender": "female",
+      "address": "227/228, KRUSHNA NAGAR,, COUSWAY ROAD,, NEAR MULTI-PURPAJ HALL,, KATARGAM, Surat City, Surat Gujarat - 395004",
+      "calculated_age": "30",
+      "lab_reports": "yes",
+      "medical_images": "yes",
+      "signaling_reports": "yes"
+    },
+    "ai_generated_data": {
+      "aadhaar_extraction": {
+        "aadhaar_number": "2888 6761 6316",
+        "address": "227/228, KRUSHNA NAGAR,, COUSWAY ROAD,, NEAR MULTI-PURPAJ HALL,, KATARGAM, Surat City, Surat Gujarat - 395004",
+        "date_of_birth": "04/04/1995",
+        "extracted_from": "both sides",
+        "extraction_confidence": "high",
+        "full_name": "Savani Monika Dignesbhai",
+        "gender": "FEMALE"
+      }
+    },
+    "files_uploaded": {
+      "aadhar_combined": {
+        "filename": "aadhaar.jpg",
+        "upload_timestamp": "2025-08-27T22:26:39.159251",
+        "field_name": "aadhar_combined",
+        "content_type": "image/jpeg"
+      }
+    },
+    "timestamp": "2025-08-27T22:26:39.178103",
+    "data_source": "user_input_and_extraction",
+    "step_completed": true
+  },
+  "step3": {
+    "step_name": "Vital Signs & Medical Photos",
+    "form_data": {
+      "temperature": "102",
+      "temperature_unit": "fahrenheit",
+      "oxygen_saturation": "69",
+      "blood_glucose": "260",
+      "glucose_timing": "random",
+      "lung_congestion": "none",
+      "water_in_lungs": "none",
+      "ecg_available": "no"
+    },
+    "ai_generated_data": {},
+    "files_uploaded": {},
+    "timestamp": "2025-08-27T22:26:48.840336",
+    "data_source": "user_input_and_analysis",
+    "step_completed": true
+  },
+  "step4": {},
+  "step5": {},
+  "step6": {},
+  "step7": {},
+  "step_completion_status": {
+    "step1": {
+      "completed": true,
+      "timestamp": "2025-08-27T22:26:23.248303",
+      "form_fields_count": 1,
+      "ai_fields_count": 0,
+      "files_count": 0
+    },
+    "step2": {
+      "completed": true,
+      "timestamp": "2025-08-27T22:26:39.178103",
+      "form_fields_count": 8,
+      "ai_fields_count": 1,
+      "files_count": 1
+    },
+    "step3": {
+      "completed": true,
+      "timestamp": "2025-08-27T22:26:48.840336",
+      "form_fields_count": 8,
+      "ai_fields_count": 0,
+      "files_count": 0
+    }
+  },
+  "step_completed": 3
+}

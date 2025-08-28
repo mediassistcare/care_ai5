@@ -1,0 +1,238 @@
+{
+  "session_info": {
+    "session_id": "08f02008-c8a1-4f69-b9e1-e48b7b3eb304",
+    "username": "VV",
+    "created_at": "2025-08-27T23:26:24.335651",
+    "last_updated": "2025-08-27T23:59:29.463932",
+    "highest_step_completed": 7
+  },
+  "step1": {
+    "step_name": "Case Category Selection",
+    "form_data": {
+      "case_category": "illness"
+    },
+    "ai_generated_data": {},
+    "files_uploaded": {},
+    "timestamp": "2025-08-27T23:26:24.335651",
+    "data_source": "user_input",
+    "step_completed": true
+  },
+  "step2": {
+    "step_name": "Patient Registration",
+    "form_data": {
+      "lab_reports": "yes",
+      "medical_images": "yes",
+      "signaling_reports": "yes"
+    },
+    "ai_generated_data": {},
+    "files_uploaded": {},
+    "timestamp": "2025-08-27T23:26:32.382422",
+    "data_source": "user_input_and_extraction",
+    "step_completed": true
+  },
+  "step3": {
+    "step_name": "Vital Signs & Medical Photos",
+    "form_data": {
+      "temperature": "102",
+      "temperature_unit": "fahrenheit",
+      "oxygen_saturation": "50",
+      "blood_glucose": "98",
+      "glucose_timing": "random",
+      "lung_congestion": "none",
+      "water_in_lungs": "none",
+      "ecg_available": "no"
+    },
+    "ai_generated_data": {},
+    "files_uploaded": {},
+    "timestamp": "2025-08-27T23:26:38.701301",
+    "data_source": "user_input_and_analysis",
+    "step_completed": true
+  },
+  "step4": {
+    "step_name": "Medical Records & Contact Information",
+    "form_data": {},
+    "ai_generated_data": {
+      "generated_questions": "[{\"abnormal_finding\":\"Oxygen Saturation: 50.0 %\",\"medical_concern\":\"hypoxemia\",\"priority\":\"critical\",\"question\":\"Your oxygen saturation is 50.0%, which is critically low compared to the normal range of 95-100%. Are you experiencing symptoms such as severe shortness of breath, chest pain, confusion, or bluish discoloration of your lips or fingertips?\"},{\"abnormal_finding\":\"Body Temperature: 102.0 \u00b0F\",\"medical_concern\":\"febrile response or infection\",\"priority\":\"abnormal\",\"question\":\"Your body temperature is 102.0 \u00b0F, indicating a fever. Have you noticed symptoms like chills, sweating, body aches, or weakness that started around the time you developed this elevated temperature?\"}]"
+    },
+    "files_uploaded": {},
+    "timestamp": "2025-08-27T23:26:48.246678",
+    "data_source": "user_input_and_analysis",
+    "step_completed": true
+  },
+  "step5": {
+    "step_name": "Complaints & Symptoms",
+    "form_data": {
+      "complaint_text": "fever, chills"
+    },
+    "ai_generated_data": {
+      "symptom_insights": {
+        "key_insights": [
+          "The combination of high fever and chills suggests an infectious process, possibly systemic.",
+          "The critically low oxygen saturation indicates potential respiratory distress or failure.",
+          "Vital signs suggest the need for urgent assessment and stabilization."
+        ],
+        "medical_labels": [
+          {
+            "category": "symptom",
+            "confidence": 95,
+            "description": "Elevated body temperature indicating a possible infection or inflammatory process.",
+            "label": "Fever",
+            "severity": "severe"
+          },
+          {
+            "category": "symptom",
+            "confidence": 90,
+            "description": "Shivering or trembling often associated with fever, indicating systemic response to infection.",
+            "label": "Chills",
+            "severity": "moderate"
+          }
+        ],
+        "symptom_summary": {
+          "affected_systems": [
+            "immune system",
+            "respiratory system",
+            "circulatory system"
+          ],
+          "duration_significance": "Unknown duration; rapid onset or persistence warrants prompt evaluation.",
+          "next_steps": "Immediate clinical assessment, oxygen therapy, and further diagnostics to identify underlying cause.",
+          "primary_concern": "High fever with chills"
+        },
+        "urgency_assessment": {
+          "immediate_concerns": [
+            "possible sepsis",
+            "respiratory failure",
+            "hypoxia"
+          ],
+          "level": "high",
+          "reasoning": "The patient has a high fever (102\u00b0F) and critically low oxygen saturation (50%), which are signs of potential severe infection or respiratory compromise requiring urgent evaluation."
+        }
+      },
+      "insights_generated_at": "2025-08-27T23:39:32.115733"
+    },
+    "files_uploaded": {},
+    "timestamp": "2025-08-27T23:39:32.115733",
+    "data_source": "user_input_and_ai_analysis",
+    "step_completed": true
+  },
+  "step6": {
+    "step_name": "Analysis & Diagnosis",
+    "form_data": {
+      "assessment_completed": true,
+      "clinical_summary_saved": true,
+      "final_completion_timestamp": "2025-08-27T23:59:09.816593"
+    },
+    "ai_generated_data": {
+      "clinical_summary": "\n                    Patient Information:- Name: [Not documented]- Age: [Not documented]- Gender: [Not documented]Vital Signs:- Body Temperature: 102\u00b0F (Fever, indicative of hyperthermia likely due to infectious or inflammatory process)- Oxygen Saturation: 50% (Severely hypoxemic, indicating significant impairment in oxygenation)- Blood Glucose (Random): 98 mg/dL (Within normal range)- Lung Congestion: None detectedPresenting Complaints:- Chief Complaint: Fever and chills- Symptom Analysis:  - Fever: Severe elevation of body temperature, suggestive of systemic infectious or inflammatory response  - Chills: Moderate, associated with systemic response to fever, characterized by shivering or tremblingClinical Findings:- Elevated body temperature consistent with severe febrile state- Markedly decreased oxygen saturation indicating critical hypoxemia- No evidence of lung congestion on clinical examination or imaging (if available)- Blood glucose within normal limits- No additional clinical findings documentedAssessment Summary:- The patient presents with severe fever and chills, accompanied by critical hypoxemia, with no evidence of lung congestion. Blood glucose levels are within normal limits. Further clinical evaluation and investigations are warranted to determine underlying etiology.\n                ",
+      "summary_accepted_at": "2025-08-27T23:59:09.816593",
+      "assessment_completed": true,
+      "final_review_status": "completed",
+      "user_action": "clicked_complete_assessment"
+    },
+    "files_uploaded": {},
+    "timestamp": "2025-08-27T23:59:09.836131",
+    "data_source": "ai_analysis",
+    "step_completed": true
+  },
+  "step7": {
+    "step_name": "ICD11 Code Generation & Analysis",
+    "form_data": {
+      "icd_generation_completed": true,
+      "codes_generated": 5
+    },
+    "ai_generated_data": {
+      "icd_codes_generated": true,
+      "icd_codes": [
+        {
+          "code": "RA01.0",
+          "title": "Severe bacterial infection, unspecified",
+          "description": "A systemic infectious process presenting with high fever and chills, consistent with severe bacterial infection such as sepsis, especially given the critical hypoxemia without lung congestion.",
+          "confidence": 95
+        },
+        {
+          "code": "R50.0",
+          "title": "Fever of other and unknown origin",
+          "description": "Severe febrile state without specific localization, matching the presentation of high fever and systemic symptoms, with no identified source yet.",
+          "confidence": 90
+        },
+        {
+          "code": "UC50.0",
+          "title": "Hypoxemia",
+          "description": "Critical hypoxemia indicated by oxygen saturation of 50%, representing significant impairment in oxygenation, which is a key clinical feature.",
+          "confidence": 95
+        },
+        {
+          "code": "1A00.Z",
+          "title": "Infectious and parasitic diseases, unspecified",
+          "description": "General code for infectious processes presenting with systemic symptoms like fever and chills, pending further diagnostic clarification.",
+          "confidence": 80
+        },
+        {
+          "code": "MG30.0Y",
+          "title": "Other specified symptoms or clinical findings, not elsewhere classified",
+          "description": "Captures the systemic symptoms such as chills and fever when no specific diagnosis is yet established.",
+          "confidence": 70
+        }
+      ],
+      "clinical_summary_used": "Patient Clinical Summary\nPatient Information:\n- Name: Not documented\n- Age: Not documented\n- Gender: Not documented\nVital Signs:\n- Temperature: 102\u00b0F (Fever, indicative of hyperthermia likely due to infectious or inflammatory process)\n- Oxygen Saturation: 50% (Severely hypoxemic, indicating significant impairment in oxygenation)\n- Blood Glucose: 98 mg/dL (Within normal range)\n- Other vitals: None documented\nPresenting Complaints:\n- Chief Complaint: Fever and chills\n- Symptom Analysis:\n- Fever: Severe elevation of body temperature, suggestive of systemic infectious or inflammatory response\n- Chills: Moderate, associated with systemic response to fever, characterized by shivering or trembling\n- Additional Symptoms:\n- None documented\n- Impact on daily activities: Not documented\nClinical Findings:\n- Elevated body temperature consistent with severe febrile state\n- Markedly decreased oxygen saturation indicating critical hypoxemia\n- No evidence of lung congestion on clinical examination or imaging (if available)\n- Blood glucose within normal limits\n- No additional clinical findings documented\nDetailed Symptom Assessment:\n- Onset:\n- Fever and chills: Not documented\n- Characteristics:\n- Fever: Severe elevation\n- Chills: Moderate, associated with systemic response\n- Severity:\n- Fever: Severe\n- Chills: Moderate\n- Relieving Factors:\n- Not documented\n- Aggravating Factors:\n- Not documented\n- Temporal Pattern:\n- Not documented\n- Associated Symptoms:\n- None documented\n- Functional Impact:\n- Not documented\nAssessment Summary:\n- The patient presents with severe fever and chills, accompanied by critical hypoxemia, with no evidence of lung congestion. Blood glucose levels are within normal limits. Further clinical evaluation and investigations are warranted to determine underlying etiology.",
+      "generation_timestamp": "2025-08-27T23:59:29.429003",
+      "total_codes_generated": 5,
+      "llm_analysis": "The patient's presentation of severe fever, chills, and critical hypoxemia suggests a systemic infectious process, possibly sepsis or severe bacterial infection, with hypoxemia indicating respiratory compromise. The absence of lung congestion points toward a non-pulmonary cause of hypoxia, such as sepsis-induced hypoxemia. The codes selected reflect the primary systemic symptoms and the critical hypoxemia, with emphasis on infectious etiology pending further diagnostic workup."
+    },
+    "files_uploaded": {},
+    "timestamp": "2025-08-27T23:59:29.463932",
+    "data_source": "icd_generation",
+    "step_completed": true
+  },
+  "step_completion_status": {
+    "step1": {
+      "completed": true,
+      "timestamp": "2025-08-27T23:26:24.335651",
+      "form_fields_count": 1,
+      "ai_fields_count": 0,
+      "files_count": 0
+    },
+    "step2": {
+      "completed": true,
+      "timestamp": "2025-08-27T23:26:32.382422",
+      "form_fields_count": 3,
+      "ai_fields_count": 0,
+      "files_count": 0
+    },
+    "step3": {
+      "completed": true,
+      "timestamp": "2025-08-27T23:26:38.701301",
+      "form_fields_count": 8,
+      "ai_fields_count": 0,
+      "files_count": 0
+    },
+    "step4": {
+      "completed": true,
+      "timestamp": "2025-08-27T23:26:48.246678",
+      "form_fields_count": 0,
+      "ai_fields_count": 1,
+      "files_count": 0
+    },
+    "step5": {
+      "completed": true,
+      "timestamp": "2025-08-27T23:39:32.115733",
+      "form_fields_count": 1,
+      "ai_fields_count": 2,
+      "files_count": 0
+    },
+    "step6": {
+      "completed": true,
+      "timestamp": "2025-08-27T23:59:09.836131",
+      "form_fields_count": 3,
+      "ai_fields_count": 5,
+      "files_count": 0
+    },
+    "step7": {
+      "completed": true,
+      "timestamp": "2025-08-27T23:59:29.463932",
+      "form_fields_count": 2,
+      "ai_fields_count": 6,
+      "files_count": 0
+    }
+  },
+  "step_completed": 7
+}

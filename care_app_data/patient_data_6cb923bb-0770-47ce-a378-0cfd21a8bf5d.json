@@ -1,0 +1,415 @@
+{
+  "session_info": {
+    "session_id": "6cb923bb-0770-47ce-a378-0cfd21a8bf5d",
+    "username": "BB",
+    "created_at": "2025-08-28T00:05:22.851279",
+    "last_updated": "2025-08-28T00:17:56.236805",
+    "highest_step_completed": 7
+  },
+  "step1": {
+    "step_name": "Case Category Selection",
+    "form_data": {
+      "case_category": "illness"
+    },
+    "ai_generated_data": {},
+    "files_uploaded": {},
+    "timestamp": "2025-08-28T00:05:22.851279",
+    "data_source": "user_input",
+    "step_completed": true
+  },
+  "step2": {
+    "step_name": "Patient Registration",
+    "form_data": {
+      "lab_reports": "yes",
+      "medical_images": "yes",
+      "signaling_reports": "yes"
+    },
+    "ai_generated_data": {},
+    "files_uploaded": {},
+    "timestamp": "2025-08-28T00:05:27.782735",
+    "data_source": "user_input_and_extraction",
+    "step_completed": true
+  },
+  "step3": {
+    "step_name": "Vital Signs & Medical Photos",
+    "form_data": {
+      "temperature": "102",
+      "temperature_unit": "fahrenheit",
+      "oxygen_saturation": "50",
+      "blood_glucose": "98",
+      "glucose_timing": "random",
+      "lung_congestion": "none",
+      "water_in_lungs": "none",
+      "ecg_available": "no"
+    },
+    "ai_generated_data": {},
+    "files_uploaded": {},
+    "timestamp": "2025-08-28T00:05:33.464205",
+    "data_source": "user_input_and_analysis",
+    "step_completed": true
+  },
+  "step4": {
+    "step_name": "Medical Records & Contact Information",
+    "form_data": {},
+    "ai_generated_data": {
+      "generated_questions": "[{\"abnormal_finding\":\"Oxygen Saturation: 50.0 %\",\"medical_concern\":\"hypoxemia\",\"priority\":\"critical\",\"question\":\"Your oxygen saturation is 50.0%, which is critically low. Are you experiencing symptoms such as severe shortness of breath, confusion, or chest pain?\"},{\"abnormal_finding\":\"Body Temperature: 102.0 \u00b0F\",\"medical_concern\":\"hyperthermia or infection\",\"priority\":\"abnormal\",\"question\":\"Your body temperature is 102.0 \u00b0F, indicating a fever. Are you experiencing chills, sweating, or any signs of infection such as cough or sore throat?\"}]"
+    },
+    "files_uploaded": {},
+    "timestamp": "2025-08-28T00:05:40.616489",
+    "data_source": "user_input_and_analysis",
+    "step_completed": true
+  },
+  "step5": {
+    "step_name": "Complaints & Symptoms",
+    "form_data": {
+      "complaint_text": "fever, chills"
+    },
+    "ai_generated_data": {
+      "symptom_insights": {
+        "key_insights": [
+          "The combination of high fever and chills suggests an infectious process, possibly systemic.",
+          "The oxygen saturation of 50% is critically low, indicating severe hypoxemia and potential respiratory failure.",
+          "Vital signs suggest urgent assessment and stabilization are necessary."
+        ],
+        "medical_labels": [
+          {
+            "category": "symptom",
+            "confidence": 95,
+            "description": "Elevated body temperature indicating a possible infection or inflammatory process.",
+            "label": "Fever",
+            "severity": "severe"
+          },
+          {
+            "category": "symptom",
+            "confidence": 90,
+            "description": "Shivering or sensation of coldness often associated with fever, indicating systemic response to infection.",
+            "label": "Chills",
+            "severity": "moderate"
+          }
+        ],
+        "symptom_summary": {
+          "affected_systems": [
+            "immune system",
+            "respiratory system"
+          ],
+          "duration_significance": "Rapid onset or persistence of high fever and hypoxia warrants immediate medical attention.",
+          "next_steps": "Immediate evaluation in a healthcare setting, including oxygen therapy, further diagnostics (e.g., blood tests, imaging), and supportive care.",
+          "primary_concern": "Fever with chills"
+        },
+        "urgency_assessment": {
+          "immediate_concerns": [
+            "hypoxia",
+            "possible sepsis",
+            "respiratory failure"
+          ],
+          "level": "high",
+          "reasoning": "The patient has a high fever (102\u00b0F) and critically low oxygen saturation (50%), which are signs of potential severe infection or respiratory compromise requiring urgent evaluation."
+        }
+      },
+      "insights_generated_at": "2025-08-28T00:05:50.113579"
+    },
+    "files_uploaded": {},
+    "timestamp": "2025-08-28T00:05:50.113579",
+    "data_source": "user_input_and_ai_analysis",
+    "step_completed": true
+  },
+  "step6": {
+    "step_name": "Analysis & Diagnosis",
+    "form_data": {
+      "assessment_completed": true,
+      "clinical_summary_saved": true,
+      "final_completion_timestamp": "2025-08-28T00:17:44.004836"
+    },
+    "ai_generated_data": {
+      "clinical_summary": "\n                    Patient Clinical SummaryPatient Information:- Name: [Not documented]- Age: [Not documented]- Gender: [Not documented]Vital Signs:- Body Temperature: 102\u00b0F (Fever, classified as severe hyperthermia)- Oxygen Saturation: 50% (Severely decreased hypoxemia)- Blood Glucose (Random): 98 mg/dL (Within normal range)- Lung Congestion: None detectedPresenting Complaints:- Chief Complaint: Fever and chills- Symptom Analysis:  - Fever: Severe elevation of body temperature, suggestive of an infectious or inflammatory process  - Chills: Moderate, associated with systemic response to fever, indicative of shivering or cold sensationDetailed Symptom Assessment:- Onset of Symptoms: Feverish sensation and high temperature began today- Additional symptoms: Not documented- Duration of symptoms: Not documentedClinical Findings:- Elevated body temperature indicating significant pyrexia- Markedly reduced oxygen saturation level, indicating hypoxemia- No evidence of lung congestion on clinical examination- Blood glucose within normal limitsAssessment Summary:The patient presents with severe hyperthermia and hypoxemia, accompanied by systemic symptoms of fever and chills. No lung congestion is observed. Further clinical evaluation is warranted to determine underlying etiology.\n                ",
+      "summary_accepted_at": "2025-08-28T00:17:44.004836",
+      "assessment_completed": true,
+      "final_review_status": "completed",
+      "user_action": "clicked_complete_assessment",
+      "question_responses": {
+        "0": {
+          "question": "When did you first notice feeling feverish or having a high temperature?",
+          "category": "onset",
+          "answer_value": "Today",
+          "timestamp": "2025-08-27T18:47:36.892Z"
+        }
+      },
+      "original_questions": [
+        {
+          "category": "onset",
+          "options": [
+            "Today",
+            "Yesterday",
+            "A few days ago",
+            "More than a week ago",
+            "I'm not sure"
+          ],
+          "question": "When did you first notice feeling feverish or having a high temperature?",
+          "relevance": "Identifying when symptoms started helps determine how quickly the illness developed.",
+          "type": "multiple_choice"
+        },
+        {
+          "category": "characteristics",
+          "options": [
+            "Yes, I feel shivering",
+            "Yes, I feel coldness",
+            "Both shivering and coldness",
+            "No chills",
+            "I'm not sure"
+          ],
+          "question": "How would you describe the feeling of chills? Do you feel shivering or coldness that you can't control?",
+          "relevance": "Understanding the type of chills helps differentiate the systemic response to fever.",
+          "type": "multiple_choice"
+        },
+        {
+          "category": "frequency",
+          "options": [
+            "Several times a day",
+            "Once or twice a day",
+            "Only at night",
+            "Rarely",
+            "I'm not sure"
+          ],
+          "question": "How often do you experience chills or shivering episodes during the day?",
+          "relevance": "Frequency indicates how persistent or intermittent the chills are, affecting comfort and activity.",
+          "type": "multiple_choice"
+        },
+        {
+          "category": "severity",
+          "options": [
+            "Very hot or sweaty",
+            "A little warm",
+            "Feeling normal",
+            "Not sure"
+          ],
+          "question": "How severe is your fever right now? Do you feel very hot, just a little warm, or normal?",
+          "relevance": "Assessing current severity helps determine urgency and treatment needs.",
+          "type": "multiple_choice"
+        },
+        {
+          "category": "relieving",
+          "options": [
+            "Taking medication",
+            "Resting",
+            "Drinking fluids",
+            "Nothing helps",
+            "I'm not sure"
+          ],
+          "question": "What makes your chills or fever feel better? Do you use medication, rest, or something else?",
+          "relevance": "Knowing what helps can guide management and comfort measures.",
+          "type": "multiple_choice"
+        },
+        {
+          "category": "aggravating",
+          "options": [
+            "Being in cold environments",
+            "Physical activity",
+            "Stress",
+            "Nighttime",
+            "No specific triggers",
+            "I'm not sure"
+          ],
+          "question": "What makes your chills or fever worse? Do certain activities, environments, or times of day trigger them?",
+          "relevance": "Identifying triggers can help in avoiding worsening of symptoms.",
+          "type": "multiple_choice"
+        },
+        {
+          "category": "characteristics",
+          "options": [
+            "Yes, very tired",
+            "Somewhat tired",
+            "No tiredness",
+            "Not sure"
+          ],
+          "question": "Have you noticed feeling very tired or weak along with the fever and chills?",
+          "relevance": "Linking fatigue with fever helps recognize the overall systemic effect.",
+          "type": "multiple_choice"
+        },
+        {
+          "category": "characteristics",
+          "options": [
+            "Yes, muscle aches",
+            "Some discomfort",
+            "No aches",
+            "Not sure"
+          ],
+          "question": "Do you feel like your body aches or have muscle pain along with the chills and fever?",
+          "relevance": "Muscle pain can be a sign of infection or inflammation associated with fever.",
+          "type": "multiple_choice"
+        },
+        {
+          "category": "characteristics",
+          "options": [
+            "Yes, I sometimes feel cold even when hot",
+            "No, I feel consistent",
+            "I'm not sure"
+          ],
+          "question": "Are there times when you feel very cold but your body temperature is actually high?",
+          "relevance": "Feeling cold despite a high temperature is a common experience with chills and helps evaluate symptom perception.",
+          "type": "multiple_choice"
+        },
+        {
+          "category": "impact",
+          "options": [
+            "Yes, it affects my daily routine",
+            "Yes, it disrupts my sleep",
+            "No, I can carry on normally",
+            "Sometimes",
+            "I'm not sure"
+          ],
+          "question": "Does your fever or chills interfere with your daily activities or sleep?",
+          "relevance": "Understanding how symptoms affect daily life helps assess severity and need for medical attention.",
+          "type": "multiple_choice"
+        }
+      ],
+      "analysis_metadata": {
+        "total_questions_generated": 10,
+        "questions_answered": 1,
+        "completion_timestamp": "2025-08-27T18:47:40.100Z"
+      },
+      "total_questions_generated": 10,
+      "total_questions_answered": 1,
+      "completion_rate": 0.1,
+      "completed_at": "2025-08-28T00:17:40.105744",
+      "session_data": {
+        "questions_generated_from": {
+          "step3_vitals": true,
+          "step4_followups": true,
+          "step5_symptoms": true
+        },
+        "priority_distribution": {
+          "step5_priority": 0.8,
+          "step3_step4_priority": 0.2
+        }
+      },
+      "organized_qa_pairs": [
+        {
+          "question_index": 0,
+          "question_text": "When did you first notice feeling feverish or having a high temperature?",
+          "question_category": "onset",
+          "answer": "Today",
+          "answered_at": "2025-08-27T18:47:36.892Z",
+          "original_question_data": {
+            "category": "onset",
+            "options": [
+              "Today",
+              "Yesterday",
+              "A few days ago",
+              "More than a week ago",
+              "I'm not sure"
+            ],
+            "question": "When did you first notice feeling feverish or having a high temperature?",
+            "relevance": "Identifying when symptoms started helps determine how quickly the illness developed.",
+            "type": "multiple_choice"
+          }
+        }
+      ]
+    },
+    "files_uploaded": {},
+    "timestamp": "2025-08-28T00:17:44.021337",
+    "data_source": "ai_analysis",
+    "step_completed": true
+  },
+  "step7": {
+    "step_name": "ICD11 Code Generation & Analysis",
+    "form_data": {
+      "icd_generation_completed": true,
+      "codes_generated": 5
+    },
+    "ai_generated_data": {
+      "icd_codes_generated": true,
+      "icd_codes": [
+        {
+          "code": "RA01.0",
+          "title": "Severe hyperthermia",
+          "description": "An extreme elevation of body temperature (102\u00b0F) indicating severe hyperthermia, often due to infectious or environmental causes.",
+          "confidence": 95
+        },
+        {
+          "code": "RA02.0",
+          "title": "Hypoxemia",
+          "description": "A markedly decreased oxygen saturation level (50%), indicating severe hypoxemia, which may result from respiratory or systemic causes.",
+          "confidence": 90
+        },
+        {
+          "code": "R50.0",
+          "title": "Fever",
+          "description": "Presence of systemic fever and chills, consistent with infectious or inflammatory processes.",
+          "confidence": 85
+        },
+        {
+          "code": "R68.8",
+          "title": "Other specified general symptoms and signs",
+          "description": "Includes systemic symptoms like chills associated with fever, not otherwise specified.",
+          "confidence": 80
+        },
+        {
+          "code": "MG30.0Y",
+          "title": "Other specified infectious and parasitic diseases, unspecified site",
+          "description": "Potential underlying infectious etiology suggested by fever and systemic symptoms, pending further clinical evaluation.",
+          "confidence": 70
+        }
+      ],
+      "clinical_summary_used": "Patient Clinical Summary\nPatient Information:\n- Name: Not documented\n- Age: Not documented\n- Gender: Not documented\nVital Signs:\n- Temperature: 102\u00b0F (Fever, classified as severe hyperthermia)\n- Oxygen Saturation: 50% (Severely decreased hypoxemia)\n- Blood Glucose: 98 mg/dL (Within normal range)\n- Other vitals: None documented\nPresenting Complaints:\n- Chief Complaint: Fever and chills\n- Symptom Analysis:\n- Fever: Severe elevation of body temperature, suggestive of an infectious or inflammatory process\n- Chills: Moderate, associated with systemic response to fever, indicative of shivering or cold sensation\n- Additional Symptoms:\n- Not documented\n- Impact on daily activities: Not documented\nClinical Findings:\n- Elevated body temperature indicating significant pyrexia\n- Markedly reduced oxygen saturation level, indicating hypoxemia\n- No evidence of lung congestion on clinical examination\n- Blood glucose within normal limits\nDetailed Symptom Assessment:\n- Onset:\n- Feverish sensation and high temperature began today\n- Characteristics:\n- Not documented\n- Severity:\n- Severe hyperthermia (102\u00b0F)\n- Relieving Factors:\n- Not documented\n- Aggravating Factors:\n- Not documented\n- Temporal Pattern:\n- Symptoms started today\n- Associated Symptoms:\n- Chills\n- Functional Impact:\n- Not documented\nAssessment Summary:\nThe patient presents with severe hyperthermia and hypoxemia, accompanied by systemic symptoms of fever and chills. No lung congestion is observed. Further clinical evaluation is warranted to determine underlying etiology.",
+      "generation_timestamp": "2025-08-28T00:17:56.236805",
+      "total_codes_generated": 5,
+      "llm_analysis": "The primary clinical features of severe hyperthermia and hypoxemia strongly suggest an acute infectious or inflammatory process. The codes selected reflect the manifestations (hyperthermia, hypoxemia, fever, chills) and potential underlying causes. Additional diagnostic workup is necessary to specify the infectious etiology, but based on available data, these codes best represent the current presentation."
+    },
+    "files_uploaded": {},
+    "timestamp": "2025-08-28T00:17:56.236805",
+    "data_source": "icd_generation",
+    "step_completed": true
+  },
+  "step_completion_status": {
+    "step1": {
+      "completed": true,
+      "timestamp": "2025-08-28T00:05:22.851279",
+      "form_fields_count": 1,
+      "ai_fields_count": 0,
+      "files_count": 0
+    },
+    "step2": {
+      "completed": true,
+      "timestamp": "2025-08-28T00:05:27.782735",
+      "form_fields_count": 3,
+      "ai_fields_count": 0,
+      "files_count": 0
+    },
+    "step3": {
+      "completed": true,
+      "timestamp": "2025-08-28T00:05:33.465218",
+      "form_fields_count": 8,
+      "ai_fields_count": 0,
+      "files_count": 0
+    },
+    "step4": {
+      "completed": true,
+      "timestamp": "2025-08-28T00:05:40.616489",
+      "form_fields_count": 0,
+      "ai_fields_count": 1,
+      "files_count": 0
+    },
+    "step5": {
+      "completed": true,
+      "timestamp": "2025-08-28T00:05:50.113579",
+      "form_fields_count": 1,
+      "ai_fields_count": 2,
+      "files_count": 0
+    },
+    "step6": {
+      "completed": true,
+      "timestamp": "2025-08-28T00:17:44.021337",
+      "form_fields_count": 3,
+      "ai_fields_count": 14,
+      "files_count": 0
+    },
+    "step7": {
+      "completed": true,
+      "timestamp": "2025-08-28T00:17:56.236805",
+      "form_fields_count": 2,
+      "ai_fields_count": 6,
+      "files_count": 0
+    }
+  },
+  "step_completed": 7
+}

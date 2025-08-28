@@ -1,0 +1,53 @@
+{
+  "feedback": "ok",
+  "timestamp": "2025-08-24T09:15:54.350Z",
+  "session_id": "unknown",
+  "username": "ROHIT1",
+  "submitted_at": "2025-08-24T14:45:54.397571",
+  "feedback_id": "c269ef4a",
+  "images": [
+    {
+      "filename": "feedback_20250824_144554_c269ef4a_img_1.jpeg",
+      "original_name": "skin.jpeg",
+      "path": "C:\\Users\\flyhi\\Desktop\\VENUGOPAL AIML\\CARE\\care_ai_rohit13\\care_ai_rohit13\\care_app_data\\feedback\\feedback_20250824_144554_c269ef4a_img_1.jpeg",
+      "size": 3608,
+      "uploaded_at": "2025-08-24T14:45:54.402468"
+    },
+    {
+      "filename": "feedback_20250824_144554_c269ef4a_img_2.jpg",
+      "original_name": "ecg1.jpg",
+      "path": "C:\\Users\\flyhi\\Desktop\\VENUGOPAL AIML\\CARE\\care_ai_rohit13\\care_ai_rohit13\\care_app_data\\feedback\\feedback_20250824_144554_c269ef4a_img_2.jpg",
+      "size": 491804,
+      "uploaded_at": "2025-08-24T14:45:54.405237"
+    },
+    {
+      "filename": "feedback_20250824_144554_c269ef4a_img_3.jpg",
+      "original_name": "throat.jpg",
+      "path": "C:\\Users\\flyhi\\Desktop\\VENUGOPAL AIML\\CARE\\care_ai_rohit13\\care_ai_rohit13\\care_app_data\\feedback\\feedback_20250824_144554_c269ef4a_img_3.jpg",
+      "size": 461543,
+      "uploaded_at": "2025-08-24T14:45:54.405237"
+    },
+    {
+      "filename": "feedback_20250824_144554_c269ef4a_img_4.jpg",
+      "original_name": "tongue.jpg",
+      "path": "C:\\Users\\flyhi\\Desktop\\VENUGOPAL AIML\\CARE\\care_ai_rohit13\\care_ai_rohit13\\care_app_data\\feedback\\feedback_20250824_144554_c269ef4a_img_4.jpg",
+      "size": 145585,
+      "uploaded_at": "2025-08-24T14:45:54.414682"
+    },
+    {
+      "filename": "feedback_20250824_144554_c269ef4a_img_5.jpg",
+      "original_name": "aadhaar.jpg",
+      "path": "C:\\Users\\flyhi\\Desktop\\VENUGOPAL AIML\\CARE\\care_ai_rohit13\\care_ai_rohit13\\care_app_data\\feedback\\feedback_20250824_144554_c269ef4a_img_5.jpg",
+      "size": 158708,
+      "uploaded_at": "2025-08-24T14:45:54.414682"
+    },
+    {
+      "filename": "feedback_20250824_144554_c269ef4a_img_6.jpg",
+      "original_name": "xray.jpg",
+      "path": "C:\\Users\\flyhi\\Desktop\\VENUGOPAL AIML\\CARE\\care_ai_rohit13\\care_ai_rohit13\\care_app_data\\feedback\\feedback_20250824_144554_c269ef4a_img_6.jpg",
+      "size": 80375,
+      "uploaded_at": "2025-08-24T14:45:54.417834"
+    }
+  ],
+  "image_count": 6
+}

@@ -1,0 +1,283 @@
+{
+  "session_info": {
+    "session_id": "83aa4a8b-cb72-45d5-8fe5-4ad1c026d9a0",
+    "username": "CC",
+    "created_at": "2025-08-27T20:12:39.877111",
+    "last_updated": "2025-08-27T22:25:26.043949",
+    "highest_step_completed": 7
+  },
+  "step1": {
+    "step_name": "Case Category Selection",
+    "form_data": {
+      "case_category": "illness"
+    },
+    "ai_generated_data": {},
+    "files_uploaded": {},
+    "timestamp": "2025-08-27T20:12:39.877111",
+    "data_source": "user_input",
+    "step_completed": true
+  },
+  "step2": {
+    "step_name": "Patient Registration",
+    "form_data": {
+      "lab_reports": "yes",
+      "medical_images": "yes",
+      "signaling_reports": "yes"
+    },
+    "ai_generated_data": {},
+    "files_uploaded": {},
+    "timestamp": "2025-08-27T20:12:52.703385",
+    "data_source": "user_input_and_extraction",
+    "step_completed": true
+  },
+  "step3": {
+    "step_name": "Vital Signs & Medical Photos",
+    "form_data": {
+      "temperature_unit": "celsius",
+      "oxygen_saturation": "69",
+      "blood_glucose": "260",
+      "glucose_timing": "random",
+      "lung_congestion": "none",
+      "water_in_lungs": "none",
+      "ecg_available": "no"
+    },
+    "ai_generated_data": {},
+    "files_uploaded": {},
+    "timestamp": "2025-08-27T20:13:06.495093",
+    "data_source": "user_input_and_analysis",
+    "step_completed": true
+  },
+  "step4": {
+    "step_name": "Medical Records & Contact Information",
+    "form_data": {},
+    "ai_generated_data": {
+      "generated_questions": "[{\"abnormal_finding\":\"Oxygen Saturation: 69.0 %\",\"medical_concern\":\"hypoxemia\",\"priority\":\"critical\",\"question\":\"Your oxygen saturation is 69.0%, which is critically low. Are you experiencing symptoms such as severe shortness of breath, chest pain, confusion, or bluish discoloration of your lips or fingertips?\"},{\"abnormal_finding\":\"Blood Glucose: 260.0 mg/dL\",\"medical_concern\":\"hyperglycemia\",\"priority\":\"critical\",\"question\":\"Your blood glucose level is 260.0 mg/dL, which is significantly elevated. Are you experiencing symptoms like excessive thirst, frequent urination, weakness, or blurred vision?\"}]"
+    },
+    "files_uploaded": {},
+    "timestamp": "2025-08-27T20:13:17.899130",
+    "data_source": "user_input_and_analysis",
+    "step_completed": true
+  },
+  "step5": {
+    "step_name": "Complaints & Symptoms",
+    "form_data": {
+      "complaint_text": "vision issues, frequent urination"
+    },
+    "ai_generated_data": {
+      "symptom_insights": {
+        "key_insights": [
+          "The patient's symptoms indicate possible uncontrolled diabetes with acute complications.",
+          "Vision issues and frequent urination are classic signs of hyperglycemia.",
+          "The critically low oxygen saturation warrants urgent assessment and stabilization."
+        ],
+        "medical_labels": [
+          {
+            "category": "condition",
+            "confidence": 90,
+            "description": "Elevated blood glucose levels, which can cause symptoms like frequent urination and vision issues.",
+            "label": "Hyperglycemia",
+            "severity": "moderate"
+          },
+          {
+            "category": "condition",
+            "confidence": 70,
+            "description": "Potential eye complication related to poorly controlled diabetes, leading to vision problems.",
+            "label": "Diabetic retinopathy",
+            "severity": "mild"
+          },
+          {
+            "category": "symptom",
+            "confidence": 85,
+            "description": "Excessive urination, often associated with high blood sugar levels.",
+            "label": "Polyuria",
+            "severity": "moderate"
+          }
+        ],
+        "symptom_summary": {
+          "affected_systems": [
+            "Endocrine system",
+            "Visual system",
+            "Renal system",
+            "Respiratory system (due to hypoxia)"
+          ],
+          "duration_significance": "The symptoms' duration is not specified, but recent onset or worsening suggests urgent need for medical evaluation.",
+          "next_steps": "Immediate clinical assessment, blood glucose management, oxygen support, and investigation for diabetic emergencies.",
+          "primary_concern": "Elevated blood glucose with vision disturbances and frequent urination"
+        },
+        "urgency_assessment": {
+          "immediate_concerns": [
+            "Severe hyperglycemia",
+            "Potential diabetic emergency",
+            "Low oxygen saturation"
+          ],
+          "level": "high",
+          "reasoning": "The combination of vision issues, very high blood glucose (260 mg/dL), and low oxygen saturation (69%) suggests possible diabetic ketoacidosis or severe metabolic disturbance requiring urgent evaluation."
+        }
+      },
+      "insights_generated_at": "2025-08-27T20:13:53.160879"
+    },
+    "files_uploaded": {},
+    "timestamp": "2025-08-27T20:13:53.177388",
+    "data_source": "user_input_and_ai_analysis",
+    "step_completed": true
+  },
+  "step6": {
+    "step_name": "Analysis & Diagnosis",
+    "form_data": {
+      "assessment_completed": true,
+      "clinical_summary_saved": true,
+      "final_completion_timestamp": "2025-08-27T22:17:16.169491"
+    },
+    "ai_generated_data": {
+      "clinical_summary": "\n                    Patient Clinical SummaryPatient Information:- Name: [Not documented]- Age: [Not documented]- Gender: [Not documented]Vital Signs:- Oxygen Saturation: 69% (Abnormal; significantly below normal range of 95-100%)- Blood Glucose (random): 260 mg/dL (Elevated; indicative of hyperglycemia)- Lung Congestion: None observedPresenting Complaints:- Chief Complaint: Vision issues- Additional Symptoms: Frequent urinationClinical Findings:- Symptom Analysis:  - Hyperglycemia: Moderate severity, evidenced by elevated blood glucose levels, correlating with symptoms such as polyuria and vision disturbances.  - Diabetic Retinopathy: Mild, suspected based on vision issues, consistent with early diabetic microvascular complications.  - Polyuria: Moderate, associated with hyperglycemia, leading to increased urination frequency.- Other findings:  - Lung examination: No congestion detected  - Vital signs: Oxygen saturation markedly decreased, indicating hypoxemiaAssessment Summary:- The patient presents with moderate hyperglycemia and associated symptoms of polyuria and vision disturbances, with clinical suspicion of mild diabetic retinopathy.- Oxygen saturation is critically low at 69%, indicating severe hypoxemia.- No evidence of lung congestion at this time.\n                ",
+      "summary_accepted_at": "2025-08-27T22:17:16.169491",
+      "assessment_completed": true,
+      "final_review_status": "completed",
+      "user_action": "clicked_complete_assessment"
+    },
+    "files_uploaded": {},
+    "timestamp": "2025-08-27T22:17:16.184606",
+    "data_source": "ai_analysis",
+    "step_completed": true
+  },
+  "step7": {
+    "step_name": "ICD11 Code Generation & Analysis",
+    "form_data": {
+      "clinical_summary_edited": "Patient Clinical Summary\nPatient Information:\n- Name: Not documented\n- Age: Not documented\n- Gender: Not documented\nVital Signs:\n- Temperature: Not documented\n- Oxygen Saturation: 69% (Abnormal; significantly below normal range of 95-100%)\n- Blood Glucose: 260 mg/dL (Elevated; indicative of hyperglycemia)\n- Other vitals: Not documented\nPresenting Complaints:\n- Chief Complaint: Vision issues\n- Symptom Analysis:\n- Hyperglycemia: Moderate severity, evidenced by elevated blood glucose levels, correlating with symptoms such as polyuria and vision disturbances\n- Diabetic Retinopathy: Mild, suspected based on vision issues, consistent with early diabetic microvascular complications\n- Polyuria: Moderate, associated with hyperglycemia, leading to increased urination frequency\n- Additional Symptoms:\n- Frequent urination: Yes\n- Impact on daily activities: Not documented\nClinical Findings:\n- Symptom Analysis:\n- Hyperglycemia: Moderate severity, evidenced by elevated blood glucose levels, correlating with symptoms such as polyuria and vision disturbances\n- Diabetic Retinopathy: Mild, suspected based on vision issues, consistent with early diabetic microvascular complications\n- Polyuria: Moderate, associated with hyperglycemia, leading to increased urination frequency\n- Other findings:\n- Lung examination: No congestion detected\n- Vital signs: Oxygen saturation markedly decreased, indicating hypoxemia\nDetailed Symptom Assessment:\n- Onset:\n- Vision issues: Not documented\n- Polyuria: Not documented\n- Characteristics:\n- Vision issues: Not documented\n- Polyuria: Not documented\n- Severity:\n- Vision issues: Not documented\n- Polyuria: Moderate\n- Relieving Factors:\n- Not documented\n- Aggravating Factors:\n- Not documented\n- Temporal Pattern:\n- Not documented\n- Associated Symptoms:\n- Frequent urination: Yes\n- Functional Impact:\n- Not documented\nAssessment Summary:\nThe patient presents with moderate hyperglycemia and associated symptoms of polyuria and vision disturbances, with clinical suspicion of mild diabetic retinopathy. Oxygen saturation is critically low at 69%, indicating severe hypoxemia. No evidence of lung congestion at this time.",
+      "completion_timestamp": "2025-08-27T16:55:26.016Z",
+      "session_duration": 144844
+    },
+    "ai_generated_data": {
+      "original_clinical_summary": "\n                    Patient Clinical SummaryPatient Information:- Name: [Not documented]- Age: [Not documented]- Gender: [Not documented]Vital Signs:- Oxygen Saturation: 69% (Abnormal; significantly below normal range of 95-100%)- Blood Glucose (random): 260 mg/dL (Elevated; indicative of hyperglycemia)- Lung Congestion: None observedPresenting Complaints:- Chief Complaint: Vision issues- Additional Symptoms: Frequent urinationClinical Findings:- Symptom Analysis:  - Hyperglycemia: Moderate severity, evidenced by elevated blood glucose levels, correlating with symptoms such as polyuria and vision disturbances.  - Diabetic Retinopathy: Mild, suspected based on vision issues, consistent with early diabetic microvascular complications.  - Polyuria: Moderate, associated with hyperglycemia, leading to increased urination frequency.- Other findings:  - Lung examination: No congestion detected  - Vital signs: Oxygen saturation markedly decreased, indicating hypoxemiaAssessment Summary:- The patient presents with moderate hyperglycemia and associated symptoms of polyuria and vision disturbances, with clinical suspicion of mild diabetic retinopathy.- Oxygen saturation is critically low at 69%, indicating severe hypoxemia.- No evidence of lung congestion at this time.\n                ",
+      "icd_codes_generated": [
+        {
+          "code": "UC50.0",
+          "description": "A condition of abnormally low oxygen saturation in the blood (69%), indicating severe hypoxemia requiring urgent attention.",
+          "confidence": 90,
+          "category": "",
+          "urgency": ""
+        },
+        {
+          "code": "SN02.0",
+          "description": "Excessive urination, a common symptom of hyperglycemia and diabetes mellitus.",
+          "confidence": 90,
+          "category": "",
+          "urgency": ""
+        }
+      ],
+      "diagnostic_tests_recommended": [
+        {
+          "test_name": "Arterial Blood Gas (ABG) Analysis",
+          "category": "Laboratory",
+          "rationale": "",
+          "urgency": "Immediate",
+          "expected_findings": "Hypoxemia (low PaO2), possible metabolic acidosis (low pH, decreased bicarbonate), elevated anion gap if diabetic ketoacidosis is present.",
+          "cost_estimate": "",
+          "preparation_required": false
+        },
+        {
+          "test_name": "Serum Electrolytes, Blood Urea Nitrogen (BUN), Creatinine",
+          "category": "Laboratory",
+          "rationale": "",
+          "urgency": "Within 24 hours",
+          "expected_findings": "Electrolyte disturbances (e.g., hyperkalemia or hypokalemia), elevated BUN and creatinine indicating dehydration or renal impairment.",
+          "cost_estimate": "",
+          "preparation_required": false
+        },
+        {
+          "test_name": "Serum Glucose and Beta-Hydroxybutyrate (or serum ketones)",
+          "category": "Laboratory",
+          "rationale": "",
+          "urgency": "Immediate",
+          "expected_findings": "Serum glucose >250 mg/dL, elevated serum ketones (beta-hydroxybutyrate), metabolic acidosis in DKA.",
+          "cost_estimate": "",
+          "preparation_required": false
+        },
+        {
+          "test_name": "Hemoglobin A1c",
+          "category": "Laboratory",
+          "rationale": "",
+          "urgency": "Within 1 week",
+          "expected_findings": "Elevated HbA1c (>6.5%), indicating chronic hyperglycemia.",
+          "cost_estimate": "",
+          "preparation_required": false
+        },
+        {
+          "test_name": "Chest X-ray (PA and lateral views)",
+          "category": "Imaging",
+          "rationale": "",
+          "urgency": "Within 24 hours",
+          "expected_findings": "Clear lung fields if no infection or congestion; infiltrates, edema, or other abnormalities if present.",
+          "cost_estimate": "",
+          "preparation_required": false
+        },
+        {
+          "test_name": "Fundoscopic Examination (Dilated Retinal Exam)",
+          "category": "Specialized Tests",
+          "rationale": "",
+          "urgency": "Within 1 week",
+          "expected_findings": "Microaneurysms, hemorrhages, exudates, or neovascularization consistent with diabetic retinopathy.",
+          "cost_estimate": "",
+          "preparation_required": false
+        }
+      ],
+      "generation_timestamp": "2025-08-27T22:25:26.030661"
+    },
+    "files_uploaded": {},
+    "timestamp": "2025-08-27T22:25:26.043949",
+    "data_source": "icd_generation",
+    "step_completed": true
+  },
+  "step_completion_status": {
+    "step1": {
+      "completed": true,
+      "timestamp": "2025-08-27T20:12:39.877111",
+      "form_fields_count": 1,
+      "ai_fields_count": 0,
+      "files_count": 0
+    },
+    "step2": {
+      "completed": true,
+      "timestamp": "2025-08-27T20:12:52.703385",
+      "form_fields_count": 3,
+      "ai_fields_count": 0,
+      "files_count": 0
+    },
+    "step3": {
+      "completed": true,
+      "timestamp": "2025-08-27T20:13:06.495093",
+      "form_fields_count": 7,
+      "ai_fields_count": 0,
+      "files_count": 0
+    },
+    "step4": {
+      "completed": true,
+      "timestamp": "2025-08-27T20:13:17.899130",
+      "form_fields_count": 0,
+      "ai_fields_count": 1,
+      "files_count": 0
+    },
+    "step5": {
+      "completed": true,
+      "timestamp": "2025-08-27T20:13:53.177388",
+      "form_fields_count": 1,
+      "ai_fields_count": 2,
+      "files_count": 0
+    },
+    "step6": {
+      "completed": true,
+      "timestamp": "2025-08-27T22:17:16.184606",
+      "form_fields_count": 3,
+      "ai_fields_count": 5,
+      "files_count": 0
+    },
+    "step7": {
+      "completed": true,
+      "timestamp": "2025-08-27T22:25:26.043949",
+      "form_fields_count": 3,
+      "ai_fields_count": 4,
+      "files_count": 0
+    }
+  },
+  "step_completed": 7
+}
